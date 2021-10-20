@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TLC Newsletter</title>
+
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- css rules to apply to google fonts font-family: 'Montserrat', sans-serif; -->
+
+  <!-- style links -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/0ea1412843.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background-color: #CCCCCC;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+    }
+
+    h1,
+    h2 {
+      font-family: 'Libre Caslon Text', serif;
+    }
+
+    p {
+      font-size: 12px;
+      margin: 15px 0;
+      line-height: 1.5;
+    }
+
+    hr {
+      border-bottom: 0;
+      margin: 30px 0;
+      background-color: #BC954B;
+      border-style: none;
+      height: 1px;
+    }
+
+    table {
+      margin: auto;
+      width: 35%;
+      margin-bottom: 30px;
+    }
+
+    a:link {
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      opacity: 60%;
+    }
+
+    /* headings */
+    .big-heading {
+      font-size: 2rem;
+      color: #BC954B;
+    }
+
+    .small-heading {
+      font-size: 1.5rem;
+    }
+
+    .card-heading {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    /* container */
+    .container-fluid {
+      padding: 3% 15%;
+    }
+
+    /* heading section */
+    #heading {
+      background-image: url(https://gallery.mailchimp.com/cdb4127c5236efd09f1d281f8/images/b68fbc45-080f-43f7-a5e6-f21a49d96f09.jpg);
+      background-repeat: repeat;
+      padding: 20px 0;
+    }
+
+    /* description section */
+    #description {
+      padding: 20px 0;
+      background-color: white;
+      color: black;
+    }
+
+    /* social media section */
+    #social-media {
+      padding: 0 0 20px;
+      background-color: white;
+    }
+
+    .soc-med-icons {
+      display: inline-block;
+      width: 30px;
+      Margin: 0 5px 0 5px;
+    }
+
+    .sm-img {
+      float: left;
+    }
+
+    /* berstein bank section */
+    #bernstein-bank {
+      color: white;
+      padding: 20px 0 10px;
+      background-color: #222222;
+    }
+
+    #bernstein-bank a:visited {
+      color: white;
+    }
+
+    .bernstein-heading {
+      padding-top: 10px;
+    }
+
+    .bern-img {
+      height: 67px;
+      width: 300px;
+      margin-bottom: 5px;
+    }
+
+    /* pipcount section */
+    #pip-count {
+      padding: 30px 0 20px;
+      background-color: white;
+      color: #222222;
+    }
+
+    .pipcount-heading {
+      color: #222222;
+    }
+
+    .pipcount-dates {
+      color: #BC954B;
+      font-weight: bold;
+    }
+
+    /* chart links cards section*/
+    #chart-links {
+      padding: 20px 30px;
+      background-image: url("https://gallery.mailchimp.com/cdb4127c5236efd09f1d281f8/images/b68fbc45-080f-43f7-a5e6-f21a49d96f09.jpg");
+      color: black;
+    }
+
+    /* chart cards */
+    .card {
+      margin: 30px 0;
+    }
+
+    .card-body {
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+
+    .h4-box {
+      width: 50%;
+      text-align: left;
+      float: left;
+    }
+
+    .d1-box {
+      display: inline-block;
+      width: 50%;
+      text-align: right;
+    }
+
+    .card-footer {
+      padding: 5px 10px 3px;
+    }
+
+    .trend {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 9px;
+      font-weight: 700;
+      color: #222222;
+    }
+
+    .setup {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 9px;
+      font-weight: 700;
+      color: #222222;
+    }
+
+    .chart-buttons-container {
+      padding: 5px 10px;
+    }
+
+    .h4-box a:link {
+      color: black;
+      font-size: 8px;
+    }
+
+    .d1-box a:link {
+      color: black;
+      font-size: 8px;
+    }
+
+    .chart-img {
+      width: 100%;
+    }
+
+    /* font awesome icons */
+    .fas {
+      font-size: 14px;
+    }
+
+    /* carousel section */
+    #carousel {
+      padding: 30px 0 20px;
+      background-color: white;
+    }
+
+    .carousel-header {
+      margin-bottom: 20px;
+      color: #222222;
+    }
+
+    .carousel-item {
+      padding: 0 15%;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      filter: invert(1);
+    }
+
+    /* news section */
+    #news {
+      padding: 20px 0;
+      background-color: white;
+      color: black;
+    }
+
+    .news-heading {
+      color: #BC954B;
+    }
+
+    .news-text {
+      font-size: 1rem;
+      color: #222222;
+    }
+
+    /* trading procedure */
+    #trading-procedure {
+      padding: 20px 0;
+      background-color: #222222;
+      color: #d3d3d3;
+      font-weight: 400;
+    }
+
+    #trading-procedure a:visited {
+      color: white;
+    }
+
+    #trading-procedure a:hover {
+      color: grey;
+    }
+
+    /* footer */
+    #footer {
+      padding: 10px 0;
+      background-color: black;
+      color: white;
+    }
+
+    .footer-text {
+      margin: 0;
+    }
+
+    /* media query changes website based on if specified conditions are true */
+    @media (max-width: 991px) {
+      .container-fluid {
+        padding: 3% 10%;
+      }
+
+      .container-fluid {
+        padding: 3% 0;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <!-- heading -->
+    <section id="heading"><img class="top" src="http://gallery.mailchimp.com/b9cf655ca2aea56b26cbf6dfc/images/Forex_Varsity.png" alt="FXV Logo" /></section><section id="description">
+      <h1 class="big-heading">TLC Newsletter - 20th October<small>    2021</small></h1>
+      <p>The Trading Professionals in our Forex Division collaborate to bring you this daily newsletter.</p>
+      <p>We do this to help clients buy and sell financial instruments accurately on exchanges around the world.</p>
+      <p>From developing trading strategies on the minute analysis, our professionals provide insight and guidance.</p>
+      <p>Helping clients ultimately achieve their goals.</p>
+    </section>
+
+    <!-- social media links -->
+    <section id="social-media">
+      <div class="soc-med-icons">
+        <a href="https://www.facebook.com/forexvarsity"><img class="sm-img" src="https://image.flaticon.com/icons/png/24/145/145802.png" alt="facebook"></a>
+      </div>
+      <div class="soc-med-icons">
+        <a href="https://twitter.com/forexvarsity"><img class="sm-img" src="https://image.flaticon.com/icons/png/24/145/145812.png" alt="twitter"></a>
+      </div>
+      <div class="soc-med-icons">
+        <a href="https://goo.gl/maps/Wg9JZxWi1faox4hFA"><img class="sm-img" src="https://image.flaticon.com/icons/png/24/300/300221.png" alt="google"></a>
+      </div>
+      <div class="soc-med-icons">
+        <a href="https://www.youtube.com/c/Forexvarsity"><img class="sm-img" src="https://image.flaticon.com/icons/png/24/187/187209.png" alt="youtube"></a>
+      </div>
+      <div class="soc-med-icons">
+        <a href="https://www.instagram.com/fxvarsity/"><img class="sm-img" src="https://image.flaticon.com/icons/png/24/733/733558.png" alt="youtube"></a>
+      </div>
+      <div class="soc-med-icons">
+        <a href="https://api.whatsapp.com/send?phone=27636597432"><img class="sm-img" src="https://image.flaticon.com/icons/png/24/733/733585.png" alt="forexvarsity"></a>
+      </div>
+      <div class="soc-med-icons">
+        <a href="http://www.forexvarsity.com"><img class="sm-img" src="https://image.flaticon.com/icons/png/24/1011/1011356.png" alt="forexvarsity"></a>
+      </div>
+    </section>
+
+    <!-- Bernstein Bank link -->
+    <section id="bernstein-bank">
+      <a href="https://bernstein-bank.com/en/#news"><img class="bern-img" src="https://gallery.mailchimp.com/cdb4127c5236efd09f1d281f8/images/dfd0b286-6efc-4d1e-9287-acd60baf2bf9.png" /></a>
+      <h2 class="bernstein-heading small-heading"><a href="https://bernstein-bank.com/en/#news">Research Centre - <em><small>click here</small></em></a></h2>
+    </section>
+
+    <!-- profit pip count -->
+    <section id="pip-count">
+      <h2 class="pipcount-heading small-heading">Newsletter Pip Profit Count</h2>
+      <table>
+        <tr>
+          <td class="pipcount-dates">2013</td>
+          <td>12675</td>
+        </tr>
+        <tr>
+          <td class="pipcount-dates">2014</td>
+          <td>9187</td>
+        </tr>
+        <tr>
+          <td class="pipcount-dates">2015</td>
+          <td>33606</td>
+        </tr>
+        <tr>
+          <td class="pipcount-dates">2016</td>
+          <td>66524</td>
+        </tr>
+        <tr>
+          <td class="pipcount-dates">2017</td>
+          <td>48373</td>
+        </tr>
+        <tr>
+          <td class="pipcount-dates">2018</td>
+          <td>44455</td>
+        </tr>
+        <tr>
+          <td class="pipcount-dates">2019</td>
+          <td>42275</td>
+        </tr>
+        <tr>
+          <td class="pipcount-dates">2020</td>
+          <td>48805</td>
+        </tr>
+        <tr>
+          <td class="pipcount-dates">2021</td>
+          <td>37800</td>
+        </tr>
+        <tr>
+          <td class="pipcount-dates">Month</td>
+          <td>1960</td>
+        </tr>
+        <tr>
+          <td class="pipcount-dates">Week</td>
+          <td>397</td>
+        </tr>
+        <tr>
+          <td class="pipcount-dates">Yesterday</td>
+          <td>209</td>
+        </tr>
+      </table>
+
+    </section><section id="chart-links">
+      <div class="row">
+
+        <!-- AUD/CAD -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">AUD/CAD</h2>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = BUY</p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/AUDCADH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/AUDCADDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AUDNZD -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">AUD/NZD</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-down"></i></p>
+                <p class="setup">ZONE = SELL</p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/AUDNZDH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/AUDNZDDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AUD/USD -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">AUD/USD</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = BUY</p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/AUDUSDH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/AUDUSDDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAD/JPY -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">CAD/JPY</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i>></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/CADJPYH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/CADJPYDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EUR/AUD -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">EUR/AUD</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-down"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-down"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURAUDH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURAUDDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EUR/GBP -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">EUR/GBP</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+					<p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURGBPH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURGBPDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EUR/JPY -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">EUR/JPY</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = BUY</p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURJPYH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURJPYDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EUR/USD -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">EUR/USD</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-down"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURUSDH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURUSDDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GBP/AUD -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">GBP/AUD</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-down"></i></p>
+                <p class="setup">ZONE = SELL</p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPAUDH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPAUDDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GBP/CAD -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">GBP/CAD</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-right"></i></p>
+                <p class="setup">ZONE = BUY SELL</p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPCADH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPCADDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GBP/JPY -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">GBP/JPY</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPJPYH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPJPYDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GBP/USD -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">GBP/USD</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-down"></i></p>
+                <p class="setup">ZONE = SELL</p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPUSDH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPUSDDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NZD/JPY -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">NZD/JPY</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/NZDJPYH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/NZDJPYDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NZD/USD -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">NZD/USD</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = BUY</p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/NZDUSDH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/NZDUSDDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- USD/CAD -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">USD/CAD</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-down"></i></p>
+                <p class="setup">ZONE = SELL</p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = SELL</p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDCADH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDCADDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- USD/CHF -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">USD/CHF</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = BUY</p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDCHFH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDCHFDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- USD/JPY -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">USD/JPY</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDJPYH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDJPYDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- USD/ZAR -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">USD/ZAR</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = SELL</p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDZARH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDZARDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- XAU/USD -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">XAU/USD</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-times"></i></p>
+                <p class="setup">ZONE = BUY</p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/XAUUSDH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/XAUUSDDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- USD/OIL -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-heading small-heading">USD/OIL</h3>
+            </div>
+            <div class="card-body">
+              <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/07/market-up-down.jpg">
+            </div>
+            <div class="card-footer">
+              <div class="h4-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = BUY</p>
+              </div>
+              <div class="d1-box">
+                <p class="trend">TREND = <i class="fas fa-arrow-up"></i></p>
+                <p class="setup">ZONE = <i class="fas fa-times"></i></p>
+              </div>
+            </div>
+            <div class="chart-buttons-container">
+              <div class="h4-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/OilH4.png" class="btn btn-sm btn-outline-dark">4 HOURLY</a>
+              </div>
+              <div class="d1-box">
+                <a href="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/OilDaily.png" class="btn btn-sm btn-outline-dark">DAILY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="https://www.dropbox.com/sh/tg1j4xsk86d57c6/AABe0n11Zzwks2qgoqkB0w4Za?dl=0" class="btn btn-lg btn-outline-light">Click Here to Download MT4 Charts</a>
+
+    </section>
+
+    <!-- carousel -->
+    <section id="carousel">
+      <div id="chart-carousel" class="carousel slide" data-ride="false" data-interval="2000">
+        <div class="carousel-inner">
+
+          <!-- first slide -->
+          <div class="carousel-item active container-fluid">
+            <h2 class="carousel-header small-heading">Australian Dollar / Canadian Dollar H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/AUDCADH4.png" alt="AUDCADH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Australian Dollar / Canadian Dollar D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/AUDCADDaily.png" alt="AUDCADDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Australian Dollar / New Zealand Dollar H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/AUDNZDH4.png" alt="AUDNZDH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Australian Dollar / New Zealand Dollar D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/AUDNZDDaily.png" alt="AUDNZDDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Australian Dollar / United States Dollar H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/AUDUSDH4.png" alt="AUDUSDH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Australian Dollar / United States Dollar D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/AUDUSDDaily.png" alt="AUDUSDDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Canadian Dollar / Japanese Yen H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/CADJPYH4.png" alt="CADJPYH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Canadian Dollar / Japanese Yen D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/CADJPYDaily.png" alt="CADJPYDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Euro / Australian Dollar H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURAUDH4.png" alt="EURAUDH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Euro / Australian Dollar D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURAUDDaily.png" alt="EURAUDDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Euro / Great British Pound H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURGBPH4.png" alt="EURGBPH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Euro / Great British Pound D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURGBPDaily.png" alt="EURGBPDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Euro / Japanese Yen H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURJPYH4.png" alt="EURJPYH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Euro / Japanese Yen D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURJPYDaily.png" alt="EURJPYDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Euro / United States Dollar H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURUSDH4.png" alt="EURUSDH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Euro / United States Dollar D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/EURUSDDaily.png" alt="EURUSDDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Great British Pound / Australian Dollar H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPAUDH4.png" alt="GBPAUDH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Great British Pound / Australian Dollar D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPAUDDaily.png" alt="GBPAUDDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Great British Pound / Canadian Dollar H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPCADH4.png" alt="GBPCADH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Great British Pound / Canadian Dollar D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPCADDaily.png" alt="GBPCADDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Great British Pound / Japenese Yen H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPJPYH4.png" alt="GBPJPYH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Great British Pound / Japenese Yen D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPJPYDaily.png" alt="GBPJPYDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Great British Pound / United States Dollar H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPUSDH4.png" alt="GBPUSDH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Great British Pound / United States Dollar D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/GBPUSDDaily.png" alt="GBPUSDDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">New Zealand Dollar / Japanese Yen H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/NZDJPYH4.png" alt="NZDJPYH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">New Zealand Dollar / Japanese Yen D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/NZDJPYDaily.png" alt="NZDJPYDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">New Zealand Dollar / United States Dollar H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/NZDJPYH4.png" alt="NZDJPYH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">New Zealand Dollar / United States Dollar D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/NZDJPYDaily.png" alt="NZDJPYDaily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">United States Dollar / Canadian Dollar H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDCADH4.png" alt="USDCADH4.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">United States Dollar / Canadian Dollar D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDCADDaily.png" alt="Daily.png">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">United States Dollar / Swiss Franc H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDCHFH4.png" alt="USDCHF">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">United States Dollar / Swiss Franc D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDCHFDaily.png" alt="USDCHF">
+          </div>
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">United States Dollar / Japenese Yen H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDJPYH4.png" alt="USDJPY">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">United States Dollar / Japenese Yen D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDJPYDaily.png" alt="USDJPY">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">United States Dollar / South African Rand H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDZARH4.png" alt="USDZAR">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">United States Dollar / South African Rand D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/USDZARDaily.png" alt="USDZAR">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Gold / United States Dollar H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/XAUUSDH4.png" alt="XAUUSD">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Gold / United States Dollar D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/XAUUSDDaily.png" alt="XAUUSD">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Oil / United States Dollar H4</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/OilH4.png" alt="OILUSD">
+          </div>
+
+          <!-- next slide -->
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-header small-heading">Oil / United States Dollar D1</h2>
+            <img class="chart-img" src="https://forexvarsity.com/welcome/wp-content/uploads/2021/10/OilDaily.png" alt="OILUSD">
+          </div>
+
+        </div>
+
+        <!-- carousel buttons -->
+        <a class="carousel-control-prev" href="#chart-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#chart-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- High impact news events -->
+    <section id="news">
+      <hr>
+      <h2 class="news-heading small-heading">HIGH IMPACT NEWS</h2>
+      <p class="news-text">EUR at 11.00</p>
+      <p class="news-text">CAD at 14.30</p>
+      <p class="news-text">USD at 16.30</p>
+      <p class="news-text">&nbsp;</p>
+    </section>
+    <section id="trading-procedure">
+      <p>If you would like to view our step-by-step procedure with regards to finding signal and entering trades...</p>
+      <a href="http://www.forexvarsity.com/wp-content/uploads/2018/05/Trading-Steps.jpg" class="btn btn-lg btn-outline-light">Click Here</a>
+      <p>Please read and understand the <strong><a href="https://forexvarsity.com/welcome/introducing-referral-brokers/privacy-policy-disclaimer/">Risk Disclaimer</a></strong></p>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+      <p class="footer-text">Copyright © 2021 Forex Varsity | All rights reserved</p>
+    </footer>
+
+</div>
+
+</body>
+
+</html>
